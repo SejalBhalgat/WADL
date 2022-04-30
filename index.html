@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/eduford.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="head1" class="first-container">
+        <div class="header-1">
+            <a href=""><i>EDUFORD</i></a>
+            <div class="searchbox">
+                <input type="text" id="SearchBox" onkeyup="search_input()" name="search" placeholder="Search here...">
+                <label for="SearchBox" class="fas fa-search"> </label>
+            </div>
+        </div>
+    </div>
+    <div class="nav-sidebar">
+
+        <nav class="navigationbar">
+            <span class="open-slide">
+          <a id="sidebar" href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="black" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="black" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="black" stroke-width="5"/>
+            </svg>
+          </a>
+        </span>
+            <div id="LoginDone" class="signup">
+                <a href="Signup.html"><i>Signup</i></a>
+                <h6>Or</h6>
+                <a href="login.html"><i>Login</i></a>
+            </div>
+
+        </nav>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="#">Home</a>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     About
+                    </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Achievements
+                          </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Academics
+                          </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Alumini
+                              </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                   Departments
+                                  </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Contact us
+                                      </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div id="main" class="banner">
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <div id='banner-img' class="carousel-inner">
+
+                    <div class="item active">
+                        <img src="images/clg.jpg" alt="Los Angeles" class="responsive" style="width: 100%;">
+
+                    </div>
+
+                    <div class="item">
+                        <img src="images/lib3.jpg" alt="Chicago" class="responsive" style="width:100%;">
+
+                    </div>
+
+                    <div class="item">
+                        <img src="images/bg6.jpg" alt="New York" class="responsive" style="width:100%;">
+
+                    </div>
+
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" style="color: rgb(255, 255, 255);"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" style="color: rgb(255, 255, 255);"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="Urgent" class="urgent-notices">
+
+        <li class="urgent-noticebox">
+            <div class="urgent-header">
+                <h6>Urgent</h6>
+                <a href="#" class="btn-close" onclick="closeUrgentnotices()"></a>
+            </div>
+            <ol>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et exercitationem rem magnam. Distinctio eum non fugit earum rem dolores!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vitae sed aperiam dolor blanditiis magnam quas culpa, harum saepe soluta dolores. Dignissimos ullam veritatis distinctio culpa modi, quas ratione impedit aperiam nihil
+                    exercitationem perferendis ea? Velit sequi dolorum id neque!</li>
+            </ol>
+        </li>
+    </div>
+    <div class="sidenav-open secondsection">
+        <div class="calender-section">
+            <div>
+                <h3 class="headgrid"><span>Academic Calender</span></h3>
+            </div>
+            <div style="text-align: center; margin-bottom: 2%; margin-top: 3%;">
+                <span class="dot "></span>
+                <span class="dot "></span>
+                <span class="dot "></span>
+                <span class="dot "></span>
+            </div>
+            <div class="calender">
+
+                <iframe src="https://calendar.google.com/calendar/embed?height=280&wkst=1&bgcolor=%234285F4&ctz=Asia%2FKolkata&title=EDUFORD%20Academic%20Calendar&src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%230B8043" style="border:solid 1px #777"
+                    width="500" height="350" frameborder="5" scrolling="no"></iframe>
+            </div>
+
+        </div>
+        <div class="notice-section">
+            <div>
+                <h3 class="headgrid"><span>Notices </span> and <span>Updates</span></h3>
+            </div>
+            <div style="text-align: center;">
+                <span class="dot "></span>
+                <span class="dot "></span>
+                <span class="dot "></span>
+                <span class="dot "></span>
+            </div>
+            <div class="notices">
+                <div class="cards">
+                    <h5>Notice 1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos velit eveniet voluptatibus fuga voluptatum sit maiores, quis dicta nihil animi nulla ipsam temporibus molestiae laboriosam eum rerum possimus quasi reprehenderit?</p>
+                    <button class="readmore-btn">Read More</button>
+                </div>
+                <div class="cards">
+                    <h5>Notice 2</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos velit eveniet voluptatibus fuga voluptatum sit maiores, quis dicta nihil animi nulla ipsam temporibus molestiae laboriosam eum rerum possimus quasi reprehenderit?</p>
+                    <button class="readmore-btn">Read More</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="sidenav-open third-section">
+        <h3 class="headgrid">Our <span> Managements</span></h3>
+        <div class=" divider ">
+            <span class="dot "></span>
+            <span class="dot "></span>
+            <span class="dot "></span>
+            <span class="dot "></span>
+        </div>
+
+        <div class="Management">
+
+            <div class="mange-container">
+                <img src="images/M.jpg" width="200" height="200" alt="house" />
+                <div class="media-icons">
+                    <a href="https://www.facebook.com/" class="fab fa-facebook"></a>
+                    <a href="https://mobile.twitter.com/i/flow/login" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-github"></a>
+                </div>
+                <div class="Mange-info">
+                    <div class="text">
+                        <p>Name: Lorem, ipsum dolor.</p>
+                        <p>About: Lorem ipsum dolor sit amet consectetur adipisicin Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, ducimus?</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mange-container">
+                <img src="images/F.jpg" width="200" height="200" alt="house" />
+                <div class="media-icons">
+                    <a href="https://www.facebook.com/" class="fab fa-facebook"></a>
+                    <a href="https://mobile.twitter.com/i/flow/login" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-github"></a>
+                </div>
+                <div class="Mange-info">
+                    <div class="text">
+                        <p>Name: Lorem, ipsum dolor.</p>
+                        <p>About: Lorem ipsum dolor sit amet consectetur adipisicin</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="fourth-section sidenav-open achievements slider">
+        <h3 class="headgrid">Our <span>Achievements</span></h3>
+        <div class="divider ">
+            <span class="dot "></span>
+            <span class="dot "></span>
+            <span class="dot "></span>
+            <span class="dot "></span>
+        </div>
+        <div class="wrapper">
+            <div class="carousel owl-carousel">
+                <div class="card card-1">
+                    Achievement A
+                </div>
+                <div class="card card-2">
+                    Achievement B
+                </div>
+                <div class="card card-3">
+                    Achievement C
+                </div>
+                <div class="card card-4">
+                    Achievement D
+                </div>
+                <div class="card card-5">
+                    Achievement E
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fifth-section sidenav-open events slider">
+        <h3 class="headgrid">Our <span>Events</span></h3>
+        <div class="divider ">
+            <span class="dot "></span>
+            <span class="dot "></span>
+            <span class="dot "></span>
+            <span class="dot "></span>
+        </div>
+        <div class="wrapper">
+            <div class="carousel owl-carousel">
+                <div class="card card-1">
+                    <div class="container">
+                        <img src="images/event1.jpg" alt="Dance" />
+                        <div class="overlay">
+                            <div class="text">
+                                <h6>Name: Lorem, ipsum dolor.</h6>
+                                <a href="EventsInfo.html">...Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="container">
+                        <img src="images/event2.jpg" alt="Dance" />
+                        <div class="overlay">
+                            <div class="text">
+                                <h6>Name: Lorem, ipsum dolor.</h6>
+                                <a href="EventsInfo.html">...Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-3">
+                    <div class="container">
+                        <img src="images/event5.jpg" alt="Dance" />
+                        <div class="overlay">
+                            <div class="text">
+                                <h6>Name: Lorem, ipsum dolor.</h6>
+                                <a href="EventsInfo.html">...Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-4">
+                    <div class="container">
+                        <img src="images/event7.jpg" alt="Dance" />
+                        <div class="overlay">
+                            <div class="text">
+                                <h6>Name: Lorem, ipsum dolor.</h6>
+                                <a href="EventsInfo.html">...Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-5">
+                    <div class="container">
+                        <img src="images/event8.jpg" alt="Dance" />
+                        <div class="overlay">
+                            <div class="text">
+                                <h6>Name: Lorem, ipsum dolor.</h6>
+                                <a href="EventsInfo.html">...Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sixth-section sidenav-open">
+        <h3 class="headgrid">Our <span>Placements</span></h3>
+        <div class="divider ">
+            <span class="dot "></span>
+            <span class="dot "></span>
+            <span class="dot "></span>
+            <span class="dot "></span>
+        </div>
+        <div class="placement-data">
+            <div class="department-chart">
+                <h3>All Department data for 2021-22</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo perferendis blanditiis deserunt reprehenderit aut soluta, ab iure autem mollitia expedita nam maxime natus nisi laborum doloremque cupiditate quaerat. Inventore, vero!</p>
+                <canvas id="myChart" style="width:100%;max-width:400px;height: 450px;"></canvas>
+            </div>
+            <div class="recuriters">
+                <h3>Our Top Recruiters</h3>
+                <img src="images/top-recruiters1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="sidenav-open seven-section">
+        <div class="newsletter">
+            <div class="contact">
+                <h4 class="head"> <span>contact</span> us </h4>
+                <div class="share">
+                    <a href="https://www.bing.com/maps?q=google+maps+fc+road+pune&form=ANNTH1&refig=458913697ccf444cbd9cbcad4cb46661"><i class="fas fa-map-marker-alt" style="font-size: 4rem; margin-right: 3%;"></i>FC road, Pune</a>
+                </div>
+                <div class="share">
+                    <a href="#"><i class="fas fa-phone-alt" style="font-size: 4rem; margin-right: 3%;"></i>02422-222422</a>
+                </div>
+                <div class="share">
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZXhMRKrHVnzNhdmsvTqFcdLwDvzwpcTjBwXbkwDZhZzjRJjNVwmKwdRjDDtQLQShsbwgq"><i class="fas fa-envelope-open" style="font-size: 4rem; margin-right: 3%;"></i>info@eduford.edu</a>
+                </div>
+            </div>
+            <div class="sidenav-open subscribe">
+                <h4 class="head"><span>subscribe</span> us for latest updates</h4>
+
+                <form action="">
+                    <input class="box" type="email" placeholder="enter your email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+                <div class="followus">
+                    <h4 class="head"><span>Follow</span> us on</h4>
+                    <div class="share">
+                        <a href="https://www.facebook.com/" class="fab fa-facebook" style="font-size: 3rem;"></a>
+                        <a href="https://mobile.twitter.com/i/flow/login" class="fab fa-twitter" style="font-size: 3rem;"></a>
+                        <a href="https://www.instagram.com/" class="fab fa-instagram" style="font-size: 3rem;"></a>
+                        <a href="#" class="fab fa-linkedin" style="font-size: 3rem;"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="sidenav-open footer">
+        <div class="box-container">
+
+            <div class="box">
+                <a href="#" class="logo"><i class="fas fa-book"></i>EDUFORD</a>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam culpa sit enim nesciunt rerum laborum illum quam error ut alias!</p>
+                <div class="share">
+                    <a href="https://www.facebook.com/" class="fab fa-facebook"></a>
+                    <a href="https://mobile.twitter.com/i/flow/login" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>our location</h3>
+                <div class="links">
+                    <a href="#">india</a>
+                    <a href="#">USA</a>
+                    <a href="#">france</a>
+                    <a href="#">japan</a>
+                    <a href="#">russia</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <div class="links">
+                    <a href="#">home</a>
+                    <a href="#">About</a>
+                    <a href="#">Achivements</a>
+                    <a href="#">Academics</a>
+                    <a href="#">contact us</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>download app</h3>
+                <div class="links">
+                    <a href="https://play.google.com/store">google play</a>
+                    <a href="#">window xp</a>
+                    <a href="https://www.apple.com/in/app-store/">app store</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer2">
+        <h1 class="credit"> created by <span> Web team of EDUFORD </span> | all rights reserved! </h1>
+    </div>
+
+    <script src="Script.js">
+    </script>
+</body>
+
+
+</html>
+
+</body>
+
+</html>
